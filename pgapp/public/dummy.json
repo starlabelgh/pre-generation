@@ -1,0 +1,23 @@
+{
+    "books":[
+        {"name": "Mindset",
+        "description": "Mindset Book",
+        "id": "1"},
+
+        {"name": "Atomic Habit",
+        "description": "Atomic Habit",
+        "id": "2"},
+
+        {"name": "Rich Dad Poor Dad",
+        "description": "Rich Dad Poor Dad",
+        "id": "3"},
+
+        {"name": "Smart Money",
+        "description": "Smart Money",
+        "id": "4"},
+
+        {"name": "Innovation Mindset",
+        "description": "Innovation Mindset",
+        "id": "5"}
+    ]
+}
