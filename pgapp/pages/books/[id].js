@@ -11,8 +11,8 @@ function BookDetail({book}) {
 
 export default BookDetail
 
-export async function getStaticProps({params}) {
-    const book = await getBookFromId(params.id)
+export async function getServerSideProps({params}) {
+    const book = await getBookFromId(params.id) 
     return {
         props: {
             book,
@@ -20,12 +20,21 @@ export async function getStaticProps({params}) {
     }
 }
 
+// export async function getStaticProps({params}) {
+//     const book = await getBookFromId(params.id)
+//     return {
+//         props: {
+//             book,
+//         }
+//     }
+// }
 
-export async function getStaticPaths() {
-    const books = await getBooks()
-    const paths = books.map((book)=>({params:{id: book.id}}))
-    return {
-        paths: paths,
-        fallback: false,
-    }
-}
+
+// export async function getStaticPaths() {
+//     const books = await getBooks()
+//     const paths = books.map((book)=>({params:{id: book.id}}))
+//     return {
+//         paths: paths,
+//         fallback: false,
+//     }
+// }
