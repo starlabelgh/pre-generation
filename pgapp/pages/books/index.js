@@ -1,4 +1,5 @@
 import { getBooks } from "../../utils/api-utils"
+import React from "react"
 import Link from 'next/link'
 function BookHome({ books }) {
     return <div>
@@ -24,5 +25,6 @@ export async function getStaticProps() {
         props: {
             books: books,
         },
+        revalidate: 10,
     }
 }
